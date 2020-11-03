@@ -1,0 +1,116 @@
+*{
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+  
+}
+
+.contain{
+	width: 90%;
+	
+	margin:0 auto;
+	margin-top: 20px;
+	border-radius:5px;
+/*	-webkit-box-shadow: -3px 0px 11px 2px rgba(138,138,138,1);
+	-moz-box-shadow: -3px 0px 11px 2px rgba(138,138,138,1);
+	box-shadow: -3px 0px 11px 2px rgba(138,138,138,1);*/
+
+}	
+	.contain header{
+		width: 100%;
+		height:250px; 
+		border-bottom:1px solid #aaa;
+		border-radius: 5px 5px 0 0;
+	}
+		.contain header .portada{
+			width: 100%;
+			height: 100%;
+			border-radius: 5px 5px 0 0;
+			
+		}
+		.contain header .portada .fotoPerfil{
+			width: 140px;
+			height: 140px;
+			/*background:white;*/
+			border:3px solid white;
+			margin:0 auto;
+			position: relative;
+			top:140px;
+			/*background-attachment: fixed;*/
+			background-repeat:no-repeat;
+			background-size:cover;
+			border-radius:100px;
+
+		}
+		.contain header .opciones{
+			width:100% ;
+			height:80px;
+			border:1px solid #aaa; 
+		}
+		.contain header .opciones .menu ul{
+			display: flex;
+		}
+		.contain header .opciones .menu ul li{
+			flex:1 1 auto;
+			text-align:center;
+			list-style:none;
+			line-height: 90px;
+			height:80px;
+			/*border:1px solid #ddd;*/
+			color:#5e5e5e;
+			
+			font-family: 'Roboto', sans-serif;
+
+		}
+		.contain header .opciones .menu ul li i{
+			display: none;
+			line-height: 80px;
+		}
+		.contain header .opciones .menu ul li:hover{
+			color:#474747;
+		}
+
+		.contain .contenido .sideRight .fotoPortada{
+			width: 100%;
+			height: 300px;
+			border:1px solid #aaa;
+			display: flex;
+			flex-flow:column wrap; 
+		}
+		.contain .contenido .sideRight .fotoPortada div{
+			flex:1 1 30%;
+			height: 100px;
+			border:1px solid #ddd;
+/*			background-repeat:no-repeat;
+			background-size:cover;*/
+			
+			/*margin:5px;			*/
+
+		}
+
+
+
+
+
+
+		@media screen and (max-width: 768px) {
+			.contain header .opciones .menu ul li span{
+				display: none;
+			}
+			.contain header .opciones .menu ul li i{
+				display: block;
+				line-height:90px; 
+			}
+			.contain header .opciones .menu ul li.vi{
+				display: none;
+			}
+			.contain .contenido .sideLeft{
+				display: none;
+
+			}
+			.contain .contenido .sideRight{
+				display: none;
+				
+			}
+
+		}

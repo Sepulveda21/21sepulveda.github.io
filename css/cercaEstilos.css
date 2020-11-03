@@ -1,0 +1,48 @@
+.contain .contenido{
+	display: flex;
+}
+
+	.contain .contenido .sideLeft{
+		flex:1 1 auto;
+	}
+	.contain .contenido .fotosCerca{
+		/*border:1px solid black;*/
+		flex:1 1 auto;
+		display:flex;
+		flex-flow:row wrap;
+	}
+			.contain .contenido .fotosCerca div{
+				border:1px solid #aaa;
+				flex:2 1 15%;
+				height:200px;
+				margin:5px;
+				background-size:cover;
+				background-repeat:no-repeat;
+				background-position:center;
+
+			}
+			.contain .contenido .fotosCerca div	li{
+				/*border:1px solid red;*/
+				font-size:2em;
+				cursor:pointer;
+				position: relative;
+				bottom:-150px;
+				left:90px;
+				color:white;
+				transition:all 1s ease;
+
+
+			}
+			.contain .contenido .fotosCerca div	li:hover{
+				color:red;
+			}
+	.contain .contenido .sideRight{
+		flex:1 1 auto;
+	}	
+
+
+@media screen and (max-width: 768px) {
+	.contain .contenido .fotosCerca div{
+		flex:1 1 40%;
+	}
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+*{
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+  
+}
+
+		.contenidoRegistro {
+			display: flex;
+			/*flex-flow:column;*/
+			/*max-height:600px;*/
+			width: 100%;
+			height:620px; 
+			
+			
+
+		}
+		.contenidoRegistro .login{
+			flex:.6 1 auto;
+			border:1px solid #ddd;
+			/*height:600px; */
+			display: flex;
+
+
+		}
+			.contenidoRegistro .login .form{
+				width: 80%;
+				/*height: 500px;*/
+				border:1px solid #eee;
+				margin:0 auto;
+				margin-top:10px;
+
+			}
+			.contenidoRegistro .login .form .cabeza{
+				width: 100%;
+				height: 90px;
+				border-bottom:1px solid #ddd;
+				margin-bottom:10px;
+				background-repeat:no-repeat;
+				background-position:center;
+				
+			}
+			.contenidoRegistro .login .form .cuerpoLogin{
+				width: 100%;
+				height: 160px;
+				border-bottom:1px solid #ddd;
+			}
+			.contenidoRegistro .login .form .cuerpoLogin ul{
+				
+				width: 60%;
+				margin:0 auto;
+			}
+			.contenidoRegistro .login .form .cuerpoLogin ul li{
+				margin-top:10px;
+				list-style: none;
+			}
+
+
+
+
+			.contenidoRegistro .login .form .cuerpoLogin ul li input{
+				width: 100%;
+				height: 40px;
+				outline: none;
+				border:1px solid #aaa;
+				text-align:center;
+				align-self:center;
+				position: relative;
+			}
+		.contenidoRegistro .cajaFotoLogin{
+			flex:1 1 auto;
+			border:1px solid #ddd;
+				background-repeat:no-repeat;
+				background-position:center;			
+		}
+		.contenidoRegistro .login .form .ingresoBoton{
+/*			position: relative;
+			left:170px;*/
+			margin:0 auto;
+			display: flex;
+			height:100px; 
+			width: 180px;
+
+			
+		}
+		.contenidoRegistro .login .form button{
+			margin-top:20px;
+			/*margin-left:10px; */
+			height:30px; 
+			width: 180px;
+			border:1px solid #ddd;
+			outline: none;
+			border-radius:5px;
+			cursor: pointer;
+			background:blue;
+			color:white;
+			opacity: .8;			
+		}
+		.contenidoRegistro .login .form button:hover{
+			opacity: 1;
+		}
+
+
+		@media screen and (max-width:768px) {
+			.contenidoRegistro .cajaFotoLogin{
+				border:1px solid red;
+				display:none; 
+			}
+			.contenidoRegistro .login{
+				width: 90%;
+				height:530px; 
+				margin:0 auto;
+				margin-top:20px;
+
+		}
+		.contenidoRegistro .login .form{
+			width: 100%;
+		}
+	
+		}
+	</style>
+</head>
+<body>
+	<div class="contenidoRegistro">
+		<div class="login">
+			<div class="form">
+				<div class="cabeza" style="background-image:url('img/littlebear.png')">
+					
+				</div>
+				<div class="cuerpoLogin">
+					<ul>
+						<li><input type="text" placeholder="nombre"></li>
+						<li><input type="email" placeholder="Correo"></li>
+						<li><input type="password" placeholder='Escribir contraseña'></li>
+					</ul>
+				</div>
+				<div class="ingresoBoton">
+					<button>Ingresar</button>
+					<button style="background:#aaa;">Registrar</button>	
+				</div>
+			</div>
+		</div>
+		<div class="cajaFotoLogin" style="background-image:url(img/hot.jpg)">
+			aqui
+		</div>
+	</div>
+</body>
+</html>
